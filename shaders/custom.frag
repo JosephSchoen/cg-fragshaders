@@ -14,8 +14,8 @@ void main() {
     FragColor = texture(image, texcoord);
     
     float L = (time/10.0) * FragColor[0] + (time/10.0)  * FragColor[1] + (time/10.0) * FragColor[2];
-    FragColor[0] = L;
-    FragColor[1] = L;
-    FragColor[2] = L;
+    FragColor[0] = L*15.0;
+    FragColor[1] = L*2.0;
+    FragColor[2] = L/5.0;
 
 }
